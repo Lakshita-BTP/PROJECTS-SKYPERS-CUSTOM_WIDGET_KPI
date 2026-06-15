@@ -5,8 +5,8 @@
 
       this.attachShadow({ mode: "open" });
 
-      this._title = "SET-TITLE";
-      this._description = "SET-DESCRIPTION";
+      this._title = "TOTAL SALES (WITH TAX)";
+      this._description = "Sales Value With Tax";
       this._valueColor = "#0F172A";
       this._titleColor = "#667085";
       this._circleColor = "rgba(249,115,22,0.07)";
@@ -34,8 +34,6 @@
             align-items:center;
             justify-content:center;
             gap:12px;
-            flex-wrap:nowrap;
-            min-width:0;
 
             margin-top:15px;
         }
@@ -98,9 +96,6 @@
             color:#6b7d99;
             text-transform:uppercase;
             margin-bottom:15px;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
         }
 
         .value{
@@ -116,7 +111,7 @@
             margin-top:6px;
         }
         .amount{
-            font-size:clamp(24px, 5vw, 42px);
+            font-size:42px;
             font-weight:700;
         }
 
@@ -129,10 +124,6 @@
         .subtitle{
             font-size:18px;
             color:#667085;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
-            min-width:0;
         }
 
         </style>
